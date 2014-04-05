@@ -128,4 +128,7 @@ public class Book {
 	this.status = status;
     }
 
+    public boolean isLost() {
+	return this.status == Status.lost;
+    }
 }

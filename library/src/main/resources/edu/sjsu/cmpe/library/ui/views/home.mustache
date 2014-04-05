@@ -19,8 +19,11 @@
 			  <td><img class="img-thumbnail" height="92" width="72" src="{{coverimage}}"></td>
 			  <td>{{title}}</td>
 			  <td>{{category}}</td>
-			  <td>{{status}}</td>
-			  <td><button id="{{isbn}}" type="button" class="btn btn-primary">Report Lost</button></td>
+			  <td id="status{{isbn}}">{{status}}</td>
+			  <td><button id="{{isbn}}"
+				      type="button"
+				      class="btn btn-primary"
+				      {{#lost}}disabled{{/lost}}>Report Lost</button></td>
                         </tr>
                     {{/books}}
                     </table>
